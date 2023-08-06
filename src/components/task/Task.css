@@ -1,0 +1,58 @@
+.task-container {
+    width: 100%;
+    padding: 12px 0;
+}
+
+.task-container .task__item {
+    display: grid;
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+    padding: 12px;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid #b5c1e9;
+}
+
+.task-action {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    justify-content: end;
+    grid-column: span 3 / span 3;
+}
+
+.task-button {
+    border-radius: 2px;
+}
+
+.task-button.right {
+    border-radius: 2px;
+    grid-column-start: 2;
+    grid-column-end: 3;  
+}
+
+.task__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    grid-column: span 8 / span 8;
+}
+
+.task__content .content__text {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 0 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.task__content .input-text {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 100%;
+    border-radius: 4px;
+    padding: 0 12px;
+    background-color: #edeef3;
+}

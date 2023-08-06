@@ -1,0 +1,49 @@
+.container{
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.container .header-todo-app{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 24px;
+  box-shadow: 0px 10px 35px 0px #0510361A;
+  padding: 12px;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-todo-app .header__title{
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+}
+
+.header-todo-app .header__action{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.header__action .action__add{
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.action{
+  border: none;
+  cursor: pointer;
+  color: #051036;
+  font-size: 14px;
+  transition: ease-in-out 0.3s;
+  background-color: #e2e4eb;
+}
+
+.action:hover{
+  background-color: #051036;
+  color: white;
+}
